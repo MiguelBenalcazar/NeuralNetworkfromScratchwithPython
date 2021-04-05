@@ -20,3 +20,11 @@ print('exponentiated values: {}'.format(exp_values))
 #normalize values
 norm_base = sum(exp_values)
 norm_values = []
+
+for value in exp_values:
+    norm_values.append(value / norm_base)
+
+print('Normalized exponentiated values:')
+print(norm_values)
+
+print('Sum of normalized values: {}'.format(sum(norm_values)))
